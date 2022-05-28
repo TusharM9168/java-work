@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html, body {
+    margin:0px;
+    padding:0px;
+    min-height:100%;
+    height:100%;
+ }
+ 
+ #wrapper {
+    min-height:100%;
+    height:auto !important;
+    height:100%;
+    margin:0 auto -50px;
+    position:relative
+ }
+ 
+ #footer {
+    height:50px;
+    background-color: rgb(230, 102, 235);
+    text-align: center;
+ }
+ 
+ #header {
+    height:50px;
+    background-color: yellow;
+    text-align: center;
+ }
+ 
+ #sidebar {
+    background-color: red;
+    width:100px;
+    position:absolute;
+    left:0;
+    top: 65px;
+    bottom: 65px;
+ }
+ #outer{
+   height: 100%;
+    background-color: rgb(127, 228, 161);
+    color: black;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 7%;
+    margin-right: 2%;
+}
+     
+ #inner{
+      background-color: rgb(120, 205, 238);
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 5%;
+    text-align: center;
+ }
+</style>
+</head>
+ <body> 
+    <div id="wrapper"> 
+     <div id="header">
+       Header
+     </div> 
+      <div id="sidebar">
+       Sidebar
+      </div> 
+      <div id="outer">
+          Outer content
+            <div id="inner">
+                Inner content
+            </div><br>
+            <div id="inner">
+                Inner content
+            </div><br>
+            <div id="inner">
+                Inner content
+            </div><br>  
+      </div>
+     </div> 
+    <div id="footer">
+      Footer
+    </div>   
+   </body>
+   </html>

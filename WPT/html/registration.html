@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <h2>Working with HTML form elements</h2>
+    <hr color="red" size="8" />
+    <div style="width: 70%; margin: auto;">
+    <fieldset>
+
+        <legend>Registration Form</legend>
+        <form>
+            <table align="center">
+                <tr>
+                    <td>Full Name</td>
+                    <td><input type="text" name="txtName" id="txtName"/></td>
+             </tr>
+             <tr>
+                <td>Gender</td>
+                <td>
+                <input type="radio" name="gender" value="male" ./>Male
+                <input type="radio" name="gender" value="female" ./>Female      
+                <input type="radio" name="gender" value="other" ./>Other 
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>Hobbies</td>
+                <td>
+                    <input type="checkbox" name="hobby[]" value="1" /> Traveling
+                    <input type="checkbox" name="hobby[]" value="2" /> Swimming
+                    <input type="checkbox" name="hobby[]" value="3" /> Writing<br>
+                    <input type="checkbox" name="hobby[]" value="4" /> Dancing
+                    <input type="checkbox" name="hobby[]" value="5" /> Driving
+                    <input type="checkbox" name="hobby[]" value="6" /> Singing
+                </td>
+
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td>
+                    <select name="city">
+                        <option value="-1">Select city</option>
+                        <optgroup label="Maharashtra">
+                            <option value="1">Mumbai</option>
+                            <option value="2">Pune</option>
+                            <option value="3">Nashik</option>
+                        </optgroup>
+                        <optgroup label="Bihar">
+                            <option value="4">Patna</option>
+                            <option>Gaya</option>
+                            <option>Bhagalpur</option>
+
+                        </optgroup>
+                    </select>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>Adress:</td>
+                <td><textarea name="txtAdress"  cols="20" rows="5"></textarea></td>
+            </tr>
+
+
+
+
+
+
+
+
+            
+
+ </table>
+
+
+
+
+
+
+
+        </form>
+</fieldset>
+    </div>
+</body>
+</html>

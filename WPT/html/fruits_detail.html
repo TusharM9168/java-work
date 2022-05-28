@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+    <script>
+        var employee = []
+        function add_employee(){
+            var employee_name = document.getElementById("emp_name").value;
+            var employee_dob = document.getElementById("emp_dob").value;
+            var employee_email = document.getElementById("emp_email").value;
+
+            var temp = {
+                name : employee_name,
+                dob : employee_dob,
+                email : ployee_email
+            }
+            employee.push(temp)
+        }
+        function display(){
+            var emp_table="<table bordr=1>"
+                for (let i = 0; i < employee.length; i++) {
+                    emp_table +="<tr><td>"+employee[i].name+"</td><td>" +
+                    employee[i].dob+"</td><td>"+ employee[i].email +"</td>,/tr>"
+                    }
+                    emp_table +="</table>"
+                    document.write(emp_table)
+        }
+
+    </script>
+</head>
+<body>
+    <input type="text" id="emp_name" placeholder="Enter Employee Name"><br>
+    <input type="text" id="emp_dob" placeholder="Enter Date of Birth"><br>
+    <input type="text" id="emp_email" placeholder="Enter Email of Employee"><br>
+    <button onclick="add_employee()">Save</button>
+    <button onclick="display_employee()">Display</button>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script>
+        var fruits = []
+
+        function add_fruits(){
+            for (let i = 0; i < 3; i++) {
+                var fruit_name = prompt("Enter fruit Name")
+                var fruit_rate = prompt("Enter fruit Rate")
+                var fruit_quantity = prompt("Enter fruit quantity")
+                var temp = {
+                    name:fruit_name,
+                    rate:fruit_rate,
+                    quantity:fruit_quantity
+                }
+                fruits.push(temp)
+            }
+        }
+            function display(){
+            var fruits_table = "<table border=1>"
+                for (let i = 0; i < fruits.length; i++) {
+                    fruits_table += "<tr><td>"+fruits[i].name+"</td><td>"+fruits[i].rate+"</td><td>"+fruits[i].quantity+"</td></tr>"
+                    
+                }
+                fruits_table +="</table>"
+                document.write(fruits_table)
+            }
+
+            add_fruits()
+            display()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <script>
+     var fruits=[]
+        for(var i=0; i<4; i++){
+
+            var frt=prompt("Enter Fruit Name")
+            fruits.push(frt)
+        }
+    fruits_list = '<table border="1" width="1" height="1" cellspacing="0" cellpadding="2"><tr>'
+        for(var i=0; i<fruits.length; i++){
+            fruits_list=fruits_list+"<td>"+fruits[i]+"</td>"
+        }
+        fruits_list=fruits_list+"</tr>"
+        document.write(fruits_list)
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
