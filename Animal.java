@@ -14,8 +14,16 @@ public void displayTotalLegs(){
 	System.out.println("TotalLegs:"+totalLegs);	
 }
 
+public void displayTotalLegs(){
+	
+	System.out.println("TotalLegs:"+totalLegs);	
 }
 
+}
+
+// git new branch testing
+// git new branch testing
+// git new branch testing
 
 class AnimalMain{
 	public static void main(String[]args){
